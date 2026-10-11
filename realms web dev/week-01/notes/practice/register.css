@@ -1,0 +1,128 @@
+main > h1 {
+	margin-bottom: 10px;
+	color: #1d2939;
+	font-size: 34px;
+}
+
+main > p:first-of-type {
+	max-width: 600px;
+	margin-bottom: 24px;
+	color: #466693;
+}
+
+main > form {
+	max-width: 600px;
+	margin-bottom: 14px;
+}
+
+.registration-form {
+	display: grid;
+	gap: 8px;
+	max-width: 600px;
+	margin-bottom: 20px;
+}
+
+main > form label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	color: #344054;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+main > form input,
+main > form select,
+.registration-form input,
+.registration-form select {
+	width: 100%;
+	min-height: 44px;
+	padding: 10px 12px;
+	border: 1px solid #cbd7e8;
+	border-radius: 6px;
+	background: #ffffff;
+	color: #1d2939;
+	font: inherit;
+}
+
+main > form input:focus,
+main > form select:focus,
+.registration-form input:focus,
+.registration-form select:focus {
+	border-color: #0056fb;
+	outline: 3px solid rgba(0, 86, 251, 0.15);
+}
+
+.registration-form button.btn-primary {
+	justify-self: start;
+	border: 0;
+	cursor: pointer;
+	font: inherit;
+}
+
+.form-message {
+	min-height: 1.5em;
+	margin: 4px 0 0;
+	color: #187354;
+	font-weight: 600;
+}
+
+.form-message:empty {
+	display: none;
+}
+
+.registration-benefits {
+	display: grid;
+	gap: 12px;
+	max-width: 600px;
+	margin-top: 32px;
+	padding: 20px;
+	border: 1px solid #dbe6f5;
+	border-radius: 8px;
+	background: #f8fbff;
+}
+
+.registration-benefits h2 {
+	margin-bottom: 4px;
+	color: #1d2939;
+	font-size: 24px;
+}
+
+.registration-benefits p {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin: 0;
+	padding: 12px 14px;
+	border: 1px solid #dbe6f5;
+	border-radius: 8px;
+	background: #ffffff;
+	color: #344054;
+}
+
+.registration-benefits i {
+	display: inline-flex;
+	flex: 0 0 36px;
+	width: 36px;
+	height: 36px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	background: #dfeaff;
+	color: #0056fb;
+	font-size: 16px;
+}
+
+.registration-benefits .link-wrapper {
+	justify-self: start;
+}
+
+@media (max-width: 520px) {
+	main > h1 {
+		font-size: 29px;
+	}
+
+	.registration-benefits {
+		padding: 16px;
+	}
+}
